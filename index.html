@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+    <h3>   git --version  </h3>  
+    <h3>   git config --global user.name "Jonathan MirCha"  </h3>  
+    <h3>   git config --global user.email jonmircha@gmail.com  </h3>  
+    <h3>   git config --global user.ui true  </h3>  
+    <h3>   git config --global init.defaultBranch main  </h3>  
+    <h3>   git config --list  </h3>  
+    <h3>   # asignando visual studio code como editor de configuración de git  </h3>  
+    <h3>   git config --global core.editor "code --wait"  </h3>  
+    <h3>   git config --global -e  </h3>  
+    <h3>   # para estandarizar los saltos de línea en windows  </h3>  
+    
+    <h5>   git config --global core.autocrlf true  </h5>  
+    <h5>   # para estandarizar los saltos de línea en linux/mac  </h5>  
+
+    <h3>   git config --global core.autocrlf input  (solo para Linux )</h3>  
+    <h3>   # ver todas las opciones de la configuración en la terminal  </h3>  
+    <h3>   git config -h  </h3>  
+    <h3>   # ver todas las opciones de la configuración en el navegador  </h3>   
+    <h3>   git help config  </h3>
+    
+    
+
+<p>
+    # agregar los cambios de un archivo al staged
+git add archivo/directorio
+# agregar todos los cambios de todos los archivos al staged
+git add .
+
+
+# los cambios son comprometidos en el repositorio
+# debes escribir el mensaje del cambio
+# cuando se abra el archivo de configuración
+# al terminar guarda y cierra el archivo
+# para que los cambios tengan efecto
+git commit
+# es un shortcut del comando anterior
+# escribes y confirmas el mensaje del cambio en un sólo paso
+git commit -m "mensaje descriptivo del cambio"
+
+
+# se agrega el origen remoto de tu repositorio de GitHub
+git remote add origin https://github.com/usuario/repositorio.git
+# la primera vez que vinculamos el repositorio remoto con el local
+git push -u origin master
+# para las subsecuentes actualizaciones, sino cambias de rama
+git push
+
+
+#para descargar los cambios del repositorio remoto al local
+git pull
+
+
+</p>
+
+
+
+</body>
+</html>
